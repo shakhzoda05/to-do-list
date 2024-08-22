@@ -17,31 +17,31 @@
 
     <form class="form bg-white p-5 rounded-lg w-[650px] mx-auto mt-[100px]">
       <div class="flex flex-col gap-5">
-        <span class="text-[25px] font-semibold">Enter your todo</span>
+        <div class="flex items-center gap-3">
+          <span class="text-[25px] font-bold text-pink-500">Enter your todo </span>
+        <span><img src="./images/pencil.svg" alt="svg" width="30" height="30"></span>
+        </div>
+        
         <div class="w-full flex items-center justify-between">
           <input
-            class="input-value py-3 w-[79%] pl-5 border-[1.5px] border-slate-500 rounded-lg outline-none focus:shadow-lg focus:shadow-pink-500"
+            class="input-value py-3 w-[79%] pl-5 border-[1.5px] border-pink-500 rounded-lg outline-none focus:shadow-md focus:shadow-pink-500"
             type="text"
             placeholder="Enter your todo"
           />
           <button
             class="bg-pink-400 w-[19%] p-2.5 font-semibold text-white rounded-lg text-[20px]"
           >
-            Submit
+            Add
           </button>
         </div>
       </div>
-      <label class="py-5 pl-3 inline-block">
-        <input class="choose-input hidden" type="file">
-        <img class="choose-img" src="./image/choose.png" alt="Choose img" width="200" height="50">      
-      </label>
     </form>
 
     <div class="w-[650px] mt-5 mx-auto bg-white rounded-lg p-5 flex justify-between gap-3">
 
-      <button class="all-btn bg-green-400 hover:opacity-50 duration-300 p-3 rounded-lg w-[30%] font-bold text-green-100">All (<span class="all-count ">0</span>)</button>
-      <button class="complated-btn bg-green-400 hover:opacity-50 duration-300 p-3 rounded-lg w-[30%] font-bold text-green-100">Complated (<span class="complated-count">0</span>)></button>
-      <button class="uncomplated-btn bg-green-400 hover:opacity-50 duration-300 p-3 rounded-lg w-[30%] font-bold text-green-100">Uncomplated (<span class="uncomplated-count ">0</span>)></button>
+      <button class="all-btn bg-pink-400 hover:opacity-50 duration-300 p-3 rounded-lg w-[30%] font-bold text-white">All (<span class="all-count">0</span>)</button>
+      <button class="complated-btn bg-pink-400 hover:opacity-50 duration-300 p-3 rounded-lg w-[30%] font-bold text-white">Complated (<span class="complated-count">0</span>)></button>
+      <button class="uncomplated-btn bg-pink-400 hover:opacity-50 duration-300 p-3 rounded-lg w-[30%] font-bold text-white">Uncomplated (<span class="uncomplated-count"> 0</span>)></button>
 
     </div>
 
